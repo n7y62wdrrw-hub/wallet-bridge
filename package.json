@@ -1,0 +1,24 @@
+{
+  "name": "multichain-testnet-wallet-bridge",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Testnet-first bridge for interoperable wallet apps across Bitcoin regtest/signet, Ethereum Sepolia, and Solana devnet.",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/server.ts",
+    "start": "tsx src/server.ts",
+    "demo:register": "tsx examples/register-two-apps.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1",
+    "ethers": "^6",
+    "express": "^5"
+  },
+  "devDependencies": {
+    "@types/express": "^5",
+    "@types/node": "^22",
+    "tsx": "^4",
+    "typescript": "^5"
+  }
+}
